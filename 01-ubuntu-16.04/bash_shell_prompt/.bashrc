@@ -63,27 +63,21 @@ COL_YELLOW="\[\033[0;38;5;11m\]"
 COL_RESET="\[\033[0m\]"
 TITLEBAR="\[\033]0; T3 \007\]"
 
-function set_conda_prompt() {
-    if [ -z `basename "$CONDA_PREFIX"` ]; then
-        VENV_PROMPT=""
-    else
+function set_venv_prompt() {
+    if [ ! -z `basename "$CONDA_PREFIX"` ]; then
         VENV_PROMPT="${COL_PINK}(`basename "$CONDA_PREFIX"`) "
-    fi
-}
-
-function set_pipenv_prompt() {
-    pipenv --venv > /dev/null 2>&1
-    if [ "$?" != 0 ]; then
-        VENV_PROMPT=""
     else
-        VENV_PROMPT="${COL_PINK}(`basename $(pipenv --venv)`) "
+        pipenv --venv > /dev/null 2>&1
+        if [ "$?" == 0 ]; then
+            VENV_PROMPT="${COL_PINK}(`basename $(pipenv --venv)`) "
+        else
+            VENV_PROMPT=""
+        fi
     fi
 }
 
 function set_bash_prompt() {
-
-    set_conda_prompt
-    set_pipenv_prompt
+    set_venv_prompt
 
     # set variable identifying the chroot you work in (used in the prompt below)
     if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
