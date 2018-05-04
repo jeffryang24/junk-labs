@@ -65,15 +65,25 @@ TITLEBAR="\[\033]0; T3 \007\]"
 
 function set_conda_prompt() {
     if [ -z `basename "$CONDA_PREFIX"` ]; then
-        CONDA_PROMPT=""
+        VENV_PROMPT=""
     else
-        CONDA_PROMPT="${COL_PINK}(`basename "$CONDA_PREFIX"`) "
+        VENV_PROMPT="${COL_PINK}(`basename "$CONDA_PREFIX"`) "
+    fi
+}
+
+function set_pipenv_prompt() {
+    pipenv --venv > /dev/null 2>&1
+    if [ "$?" != 0 ]; then
+        VENV_PROMPT=""
+    else
+        VENV_PROMPT="${COL_PINK}(`basename $(pipenv --venv)`) "
     fi
 }
 
 function set_bash_prompt() {
 
     set_conda_prompt
+    set_pipenv_prompt
 
     # set variable identifying the chroot you work in (used in the prompt below)
     if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -102,9 +112,9 @@ function set_bash_prompt() {
     fi
 
     if [ "$color_prompt" = yes ]; then
-        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${CONDA_PROMPT}${COL_GREEN_BOLD}at ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}$ ${COL_YELLOW}"    
+        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_GREEN_BOLD}at ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}$ ${COL_YELLOW}"    
     else
-        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${CONDA_PROMPT}at \w\n$ "
+        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}at \w\n$ "
     fi
     unset color_prompt force_color_prompt
 
