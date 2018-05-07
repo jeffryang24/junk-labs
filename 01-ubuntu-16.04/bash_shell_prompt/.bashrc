@@ -61,7 +61,7 @@ COL_LIGHT_GREEN_BOLD="\[\033[1;38;5;148m\]"
 COL_LIGHT_PURPLE="\[\033[0;38;5;75m\]"
 COL_YELLOW="\[\033[0;38;5;11m\]"
 COL_RESET="\[\033[0m\]"
-TITLEBAR="\[\033]0; TVLK $RANDOM \007\]"
+TITLEBAR="\[\033]0; TVLK \007\]"
 
 function set_venv_prompt() {
     # For Conda
