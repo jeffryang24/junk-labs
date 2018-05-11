@@ -63,6 +63,7 @@ COL_GREEN_BOLD="\[\033[1;38;5;82m\]"
 COL_LIGHT_GREEN_BOLD="\[\033[1;38;5;148m\]"
 COL_LIGHT_PURPLE="\[\033[0;38;5;75m\]"
 COL_YELLOW="\[\033[0;38;5;11m\]"
+COL_CHOCOLATE="\[\033[1;38;5;130m\]"
 COL_RESET="\[\033[0m\]"
 TITLEBAR="\[\033]0; TVLK \007\]"
 
@@ -111,9 +112,9 @@ function set_bash_prompt() {
     fi
 
     if [ "$color_prompt" = yes ]; then
-        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_GREEN_BOLD}at ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}$ ${COL_YELLOW}"    
+        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_CHOCOLATE} 💩  ${COL_GREEN_BOLD}at ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}$ ${COL_YELLOW}"    
     else
-        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}at \w\n$ "
+        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT} 💩  at \w\n$ "
     fi
     unset color_prompt force_color_prompt
 
