@@ -4,3 +4,6 @@
 [submodule "externals/bash-git-prompt"]
 	path = externals/bash-git-prompt
 	url = git@github.com:magicmonty/bash-git-prompt.git
+[submodule "externals/motivate"]
+	path = externals/motivate
+	url = git@github.com:mubaris/motivate.git
