@@ -190,3 +190,6 @@ PROMPT_COMMAND=set_bash_prompt
 
 GIT_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
+
+# Get motivation
+motivate
