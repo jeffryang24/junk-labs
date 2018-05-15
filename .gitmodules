@@ -1,3 +1,6 @@
-[submodule "motivate"]
+[submodule "externals/motivate"]
 	path = externals/motivate
 	url = git@github.com:mubaris/motivate.git
+[submodule "externals/vimcfg"]
+	path = externals/vimcfg
+	url = git@github.com:jeffryang24/vimcfg.git
