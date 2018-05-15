@@ -1,0 +1,3 @@
+[submodule "motivate"]
+	path = externals/motivate
+	url = git@github.com:mubaris/motivate.git
