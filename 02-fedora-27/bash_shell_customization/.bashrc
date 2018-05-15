@@ -9,8 +9,11 @@ fi
 # export SYSTEMD_PAGER=
 
 # Alias
+JUNKYARD_PATH="/home/jeffryangtoni/Sources/GitHub/junks-lab"
 alias pip-update-force="pip install -U --ignore-installed -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
 alias pip-update="pip install -U -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
+alias junkyard="cd ${JUNKYARD_PATH}"
+
 # User specific aliases and functions
 export GOPATH=$HOME/go
 
@@ -57,3 +60,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # Force vagrant to use vbox
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
+# Git bash prompt
+GIT_PROMPT_ONLY_IN_REPO=1
+source ~/.bash-git-prompt/gitprompt.sh
