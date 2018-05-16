@@ -1,6 +1,0 @@
-[submodule "externals/vimcfg"]
-	path = externals/vimcfg
-	url = git@github.com:jeffryang24/vimcfg.git
-[submodule "externals/bash-git-prompt"]
-	path = externals/bash-git-prompt
-	url = git@github.com:magicmonty/bash-git-prompt.git
