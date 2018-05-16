@@ -185,6 +185,9 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 # Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# Pipenv completion
+eval "$(pipenv --completion)"
+
 set_bash_prompt
 PROMPT_COMMAND=set_bash_prompt
 
