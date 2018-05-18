@@ -112,9 +112,9 @@ function set_bash_prompt() {
     fi
 
     if [ "$color_prompt" = yes ]; then
-        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_CHOCOLATE}★  ${COL_GREEN_BOLD}➙  ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}ᑀ  ${COL_YELLOW}" 
+        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_CHOCOLATE}☻  ${COL_GREEN_BOLD}➙  ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}:: ${COL_YELLOW}" 
     else
-        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}★  ➙  \w\nᑀ  "
+        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}☻  ➙  \w\n:: "
     fi
     unset color_prompt force_color_prompt
 
