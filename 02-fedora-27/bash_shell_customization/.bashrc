@@ -61,6 +61,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Force vagrant to use vbox
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
+# pipenv bash completion
+eval "$(pipenv --completion)"
+
 # Git bash prompt
 GIT_PROMPT_ONLY_IN_REPO=1
 source "${JUNKYARD_PATH}/externals/bash-git-prompt/gitprompt.sh"
