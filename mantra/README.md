@@ -6,4 +6,6 @@ Mantra is a collection of tools which help bootstraping or configuring the syste
 
 | Mantra Name | Version | Status   |
 | :---------- | :-----: | :----:   |
-| Boss Babie  | TBA     | Proposed |
+| [Boss Babie] | TBA     | Proposed |
+
+[Boss Babie]: https://github.com/jeffryang24/boss-babie
