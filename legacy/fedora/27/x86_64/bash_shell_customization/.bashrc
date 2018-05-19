@@ -66,4 +66,6 @@ eval "$(pipenv --completion)"
 
 # Git bash prompt
 GIT_PROMPT_ONLY_IN_REPO=1
-source "${JUNKYARD_PATH}/externals/bash-git-prompt/gitprompt.sh"
+source "/home/jeffryangtoni/bash-git-prompt/gitprompt.sh"
+
+motivate | cowsay
