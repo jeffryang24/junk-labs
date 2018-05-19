@@ -61,8 +61,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 COL_PINK="\[\033[0;38;5;201m\]"
 COL_GREEN_BOLD="\[\033[1;38;5;82m\]"
 COL_LIGHT_GREEN_BOLD="\[\033[1;38;5;148m\]"
+COL_LIGHT_LIME="\[\033[38;5;48m\]"
 COL_LIGHT_PURPLE="\[\033[0;38;5;75m\]"
 COL_YELLOW="\[\033[0;38;5;11m\]"
+COL_YELLOW_BOLD="\[\033[1;38;5;11m\]"
 COL_CHOCOLATE="\[\033[1;38;5;130m\]"
 COL_RESET="\[\033[0m\]"
 TITLEBAR="\[\033]0; TVLK \007\]"
@@ -112,9 +114,9 @@ function set_bash_prompt() {
     fi
 
     if [ "$color_prompt" = yes ]; then
-        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_YELLOW}☻  ${COL_GREEN_BOLD}➙  ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}:: ${COL_YELLOW}" 
+        PS1="\n${TITLEBAR}${COL_PINK}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}${COL_YELLOW_BOLD}☻  ${COL_GREEN_BOLD}➙  ${COL_LIGHT_GREEN_BOLD}\w\n${COL_LIGHT_PURPLE}☛  ${COL_LIGHT_LIME}" 
     else
-        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}☻  ➙  \w\n:: "
+        PS1="\n${TITLEBAR}${debian_chroot:+($debian_chroot)}${VENV_PROMPT}☻  ➙  \w\n☛  "
     fi
     unset color_prompt force_color_prompt
 
@@ -195,4 +197,4 @@ GIT_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
 
 # Get motivation
-motivate
+motivate | cowsay
