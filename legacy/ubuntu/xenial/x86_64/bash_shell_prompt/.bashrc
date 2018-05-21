@@ -172,6 +172,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by Anaconda3 installer
 export PATH="/home/jeffryangtoni/anaconda3/bin:$PATH"
+eval "$(register-python-argcomplete conda)"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
