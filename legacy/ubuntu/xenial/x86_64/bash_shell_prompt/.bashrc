@@ -155,6 +155,7 @@ alias traveloka='cd $HOME/sources/traveloka'
 alias junkyard='cd $HOME/sources/github/junks-lab'
 alias pip-update="pip install -U -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
 alias pip-update-force="pip install --ignore-installed -U -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
+alias jupyter-bg="nohup jupyter notebook > /dev/null 2>&1 &"
 
 export TRAVELOKA_ROOT=~jeffryangtoni/traveloka
 export GEN=~jeffryangtoni/traveloka/generated
