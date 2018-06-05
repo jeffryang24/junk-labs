@@ -153,8 +153,8 @@ fi
 # Alias
 alias traveloka='cd $HOME/sources/traveloka'
 alias junkyard='cd $HOME/sources/github/junks-lab'
-alias pip-update="pip freeze --local | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install -U"
-alias pip-update-force="pip freeze --local | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install --ignore-installed -U"
+alias pip-update="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install -U"
+alias pip-update-force="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install --ignore-installed -U"
 alias jupyter-bg="nohup jupyter notebook > /dev/null 2>&1 &"
 
 export TRAVELOKA_ROOT=~jeffryangtoni/traveloka

@@ -10,8 +10,8 @@ fi
 
 # Alias
 JUNKYARD_PATH="/home/jeffryangtoni/Sources/GitHub/junks-lab"
-alias pip-update-force="pip install -U --ignore-installed -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
-alias pip-update="pip install -U -r <(pip list --outdated --format=freeze | sed 's/==/>=/')"
+alias pip-update-force="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install --ignore-installed -U"
+alias pip-update="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d= -f1 | xargs -n1 pip install -U"
 alias junkyard="cd ${JUNKYARD_PATH}"
 
 # User specific aliases and functions
