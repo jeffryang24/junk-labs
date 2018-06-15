@@ -189,6 +189,9 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 # Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# Luarocks
+export PATH="$HOME/.luarocks/bin:$PATH"
+
 # Pipenv completion
 eval "$(pipenv --completion)"
 
