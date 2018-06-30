@@ -6,6 +6,8 @@ Drug is a collection of libraries which help bootstrapping the mantra. Available
 
 | Drug Name | Version | Status |
 | :-------- | :-----: | :----: |
-| [Jush] | TBA | Planned |
+| [Jush] | 1.0.0-alpha | On Progress |
+| [git-stuff] | 1.0.0-alpha | On Progress |
 
 [Jush]: https://github.com/jeffryang24/jush
+[git-stuff]: https://github.com/jeffryang24/git-stuff
