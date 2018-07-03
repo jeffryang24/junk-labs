@@ -71,13 +71,12 @@ TITLEBAR="\[\033]0; TVLK \007\]"
 
 function set_venv_prompt() {
     # For Conda
-    if [ ! -z `basename "$CONDA_PREFIX"` ]; then
+    if [ ! -z "$(basename "$CONDA_PREFIX")" ]; then
         VENV_PROMPT="${COL_PINK}(`basename "$CONDA_PREFIX"`) "
     else
         # For pipenv
-        pipenv --venv > /dev/null 2>&1
-        if [ "$?" == 0 ]; then
-            VENV_PROMPT="${COL_PINK}(`basename $(pipenv --venv)`) "
+        if [ ! -z "${VIRTUAL_ENV}" ] && pipenv --venv > /dev/null 2>&1; then
+            VENV_PROMPT="${COL_PINK}($(basename "$(pipenv --venv)")) "
         else
             VENV_PROMPT=""
         fi
