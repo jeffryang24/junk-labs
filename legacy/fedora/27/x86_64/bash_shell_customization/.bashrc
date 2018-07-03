@@ -50,6 +50,11 @@ export PATH="/home/jeffryangtoni/anaconda3/bin:$PATH"
 export SDKMAN_DIR="/home/jeffryangtoni/.sdkman"
 [[ -s "/home/jeffryangtoni/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jeffryangtoni/.sdkman/bin/sdkman-init.sh"
 
+# Export CLASSPATH for Java
+export CLASSPATH=".:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib:/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.7.1-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
