@@ -199,6 +199,9 @@ export PATH="$HOME/.luarocks/bin:$PATH"
 # Dart bin
 export PATH="/usr/lib/dart/bin:$PATH"
 
+# Flutter bin
+export PATH="$HOME/flutter/bin:$PATH"
+
 # Pipenv completion
 eval "$(pipenv --completion)"
 
