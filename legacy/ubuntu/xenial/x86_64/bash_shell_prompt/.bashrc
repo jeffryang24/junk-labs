@@ -196,6 +196,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Luarocks
 export PATH="$HOME/.luarocks/bin:$PATH"
 
+# Dart bin
+export PATH="/usr/lib/dart/bin:$PATH"
+
 # Pipenv completion
 eval "$(pipenv --completion)"
 
