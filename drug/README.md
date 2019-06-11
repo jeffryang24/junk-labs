@@ -4,10 +4,17 @@
 
 Drug is a collection of libraries which help bootstrapping the mantra. Available drug(s):
 
-| Drug Name | Version | Status |
-| :-------- | :-----: | :----: |
-| [Jush] | 1.0.0-alpha | On Progress |
-| [git-stuff] | 1.0.0-alpha | On Progress |
-
-[Jush]: https://github.com/jeffryang24/jush
-[git-stuff]: https://github.com/jeffryang24/git-stuff
+<table>
+  <thead>
+    <tr>
+      <th>Drug Name</th>
+      <th>Version</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3" style="text-align: center">Not Available</td>
+    </tr>
+  </tbody>
+</table>

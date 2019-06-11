@@ -2,10 +2,21 @@
 
 # Mantra
 
-Mantra is a collection of scripts and tools which help configuring or bootstrapping system. Available mantra(s):
+Mantra is a collection of scripts and tools which help configuring or bootstrapping an application, library, project, or system. Available mantra(s):
 
-| Mantra Name | Version | Status   |
-| :---------- | :-----: | :----:   |
-| [Boss Babie] | TBA | On Progress |
-
-[Boss Babie]: https://github.com/jeffryang24/boss-babie
+<table>
+  <thead>
+    <tr>
+      <th>Mantra Name</th>
+      <th>Version</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/jeffryang24/boss-babie">Boss Babie</a></td>
+      <td>0.1.0</td>
+      <td>In Progress</td>
+    </tr>
+  </tbody>
+</table>
