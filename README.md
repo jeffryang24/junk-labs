@@ -1,4 +1,4 @@
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRnMSqqawzSB6qnbi6EZK4DczaM6biwQd69hsv71DFKUf3dWm2nw" width="450" alt="junkyard" />
+<img src="https://images.unsplash.com/photo-1465929517729-473000af12ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80" width="450" alt="junkyard" />
 
 # :wastebasket: Junks Lab :microscope:
 
@@ -15,3 +15,7 @@ This repository may contains unstable libraries, please use it on your own risk.
 [drug]: ./drug
 [legacy]: ./legacy
 [mantra]: ./mantra
+
+## Reference
+
+- Junks Lab photo by [Ryan Hafey on Unsplash](https://unsplash.com/@ryanhafey?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge "Ryan Hafey").
