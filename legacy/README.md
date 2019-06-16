@@ -3,3 +3,7 @@
 # Legacy
 
 These are the legacy... Old but still used on some system.
+
+## Reference
+
+- Image quote by https://content.thriveglobal.com.
